@@ -1,6 +1,6 @@
-use std::fs::File;
-use std::io::{BufReader, BufRead};
 use std::error;
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 
 fn main() -> Result<(), Box<dyn error::Error>> {
     let file = File::open("input.txt")?;
